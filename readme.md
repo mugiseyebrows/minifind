@@ -61,9 +61,13 @@ paths = find("D:\\dev").maxdepth(2).name('.git').collect()
 
 .size(low, high) - match file size
 
+.mtime(low, high) - match modification time
+
 .filter(predicate) - match with your predicate
 
-.maxdepth(n) - dont go deeper than n levels in.
+.maxdepth(n) - don't go deeper than n levels in.
+
+.first(n) - stop after n matched files
 ```
 
 # See also
