@@ -1,3 +1,5 @@
 __pycache__/
 minifind.egg-info/
 dist/
+build/
+dev.bat
