@@ -94,6 +94,21 @@ class MtimePredicate:
         high = self._high
         return (low is None or mtime > low) and (high is None or mtime < high)
 
+def seconds_ago(n):
+    return (datetime.datetime.now() - datetime.timedelta(seconds = n)).timestamp()
+
+def minutes_ago(n):
+    return (datetime.datetime.now() - datetime.timedelta(minutes= n)).timestamp()
+
+def hours_ago(n):
+    return (datetime.datetime.now() - datetime.timedelta(hours= n)).timestamp()
+
+def days_ago(n):
+    return (datetime.datetime.now() - datetime.timedelta(days = n)).timestamp()
+
+def weeks_ago(n):
+    return (datetime.datetime.now() - datetime.timedelta(weeks = n)).timestamp()
+
 def matches(name, path, predicates: list[Predicate]):
     for predicate in predicates:
         if not predicate(name, path):
