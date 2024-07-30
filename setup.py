@@ -11,7 +11,7 @@ except FileNotFoundError:
 setup(
     packages = find_packages(),
     name = 'minifind',
-    version='0.0.2',
+    version='0.0.3',
     author="Stanislav Doronin",
     author_email="mugisbrows@gmail.com",
     url='https://github.com/mugiseyebrows/minifind',
